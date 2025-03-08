@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom Navbar</title>
+  <title>AI Brain</title>
   <link rel="stylesheet" href="Styles.css">
+  <link rel="icon" type="image/x-icon" href="TI Final Logo pdf version-01 1.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,41 +27,42 @@
   <!-- Navbar Content -->
 
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="TI Final Logo pdf version-01 1.png" alt="AI Brain" height="75">
-      </a>
+    <div class="container-fluid d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand me-4" href="#">
+            <img src="TI Final Logo pdf version-01 1.png" alt="AI Brain" height="75">
+        </a>
 
-      <!-- Navbar Toggler for Mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Knowledge</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Start Ups</a></li>
-        </ul>
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+            <ul class="navbar-nav mx-4 gap-3">
+                <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Knowledge</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Start Ups</a></li>
+            </ul>
 
-        <!-- Search Bar -->
-        <form id="form" role="search">
-          <input type="search" id="query" name="q" placeholder="Quick Search" aria-label="Search through site content">
-          <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"
-              style="color: rgb(158, 157, 157);"></i></button>
-        </form>
+            <!-- Search Bar -->
+            <form id="form" role="search" class="mx-4">
+                <input type="search" id="query" name="q" placeholder="Quick Search" aria-label="Search through site content">
+                <button type="submit" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(158, 157, 157);"></i>
+                </button>
+            </form>
 
-        <!-- Buttons -->
-        <div class="ms-3">
-          <button class="btn btn-outline-custom">Launch Your Project</button>
-          <button class="btn btn-custom ms-2">Login/SignUp</button>
+            <!-- Buttons -->
+            <div class="d-flex ms-3 gap-3">
+                <button class="btn btn-outline-custom">Launch Your Project</button>
+                <button class="btn btn-custom">Login/SignUp</button>
+            </div>
         </div>
-      </div>
     </div>
-  </nav>
+</nav>
 
 
 
@@ -364,6 +366,57 @@
 
     <button id="exploreBtn" class="explore-btn mt-4" style="margin-bottom: 40px;">More</button>
   </div>
+
+
+
+  <!-- Card Section -->
+
+  <section class="blog-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="icon-bg bg-red">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h5 class="card-title">TRENDING NOW</h5>
+                    <p class="card-text">Find interesting blogs that are trending now</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="icon-bg bg-dark">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h5 class="card-title">NEW RELEASES</h5>
+                    <p class="card-text">Catch up on all the latest blogs</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <div class="icon-bg bg-dark">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="card-title">POPULAR PICKS</h5>
+                    <p class="card-text">Find the blogs popular among the readers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sliding Images Section -->
+
+
+
 
 
   <script src="Scipt.js"></script>
