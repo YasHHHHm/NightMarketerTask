@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Navbar</title>
+  <link rel="stylesheet" href="Styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+  <!-- Navbar Content -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="TI Final Logo pdf version-01 1.png" alt="AI Brain" height="75">
+      </a>
+
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Knowledge</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Start Ups</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form id="form" role="search">
+          <input type="search" id="query" name="q" placeholder="Quick Search" aria-label="Search through site content">
+          <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"
+              style="color: rgb(158, 157, 157);"></i></button>
+        </form>
+
+        <!-- Buttons -->
+        <div class="ms-3">
+          <button class="btn btn-outline-custom">Launch Your Project</button>
+          <button class="btn btn-custom ms-2">Login/SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Carousel Section -->
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="pexels-paul-ijsendoorn-33041 1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Launchpad For Products <br> Services That Have Something<br> Unique and New</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="jonatan-pie-3l3RwQdHRHg-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Launchpad For Products <br> Services That Have Something<br> Unique and New</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Launchpad For Products <br> Services That Have Something<br> Unique and New</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="ethan-hoover-zyU2gQ9mWLM-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Launchpad For Products <br> Services That Have Something<br> Unique and New</h1>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+        <span class="custom-carousel-icon" style="height: 50px; background: #ffffff; border-radius: 29px; width: 51px;">
+            <i class="fa-solid fa-angle-left"></i>
+        </span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+        <span class="custom-carousel-icon" style="height: 50px; background: #ffffff; border-radius: 29px; width: 51px;">
+            <i class="fa-solid fa-angle-right"></i>
+        </span>
+    </a>
+</div>
+
+
+
+
+  <!-- Category Section -->
+
+  <div class="container text-center mt-5" style="margin-bottom: 60px;">
+    <h2 class="section-title">Categories</h2>
+    <div class="row g-3">
+
+      <!-- First Row -->
+      <div class="col-md-4">
+        <div class="category-card ">
+          <img src="Rectangle 10.png" class="img-fluid" alt="Automobile">
+          <div class="category-caption">Automobile</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="Rectangle 2.png" class="img-fluid-big" alt="Arts & Entertainment">
+          <div class="category-caption">Arts & Entertainment</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card ">
+          <img src="Rectangle 7.png" class="img-fluid" alt="Home Appliances">
+          <div class="category-caption">Home Appliances</div>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="Rectangle 12.png" class="img-fluid" alt="Electronics">
+          <div class="category-caption">Electronics</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="Rectangle 6.png" class="img-fluid-small" alt="Education">
+          <div class="category-caption">Education</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="Rectangle 8.png" class="img-fluid" alt="Personal Care">
+          <div class="category-caption">Personal Care</div>
+        </div>
+      </div>
+
+      <!-- Hidden extra categories in the same row layout -->
+      <div class="row g-3 extra-categories d-none">
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="Rectangle 31.png" class="img-fluid" alt="Fashion">
+            <div class="category-caption">Medical</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="Rectangle 29.png" class="img-fluid" alt="Sports">
+            <div class="category-caption">Food & Beverages</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="category-card">
+            <img src="Rectangle 30.png" class="img-fluid" alt="Furniture">
+            <div class="category-caption">Sports</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Explore Button -->
+    <button id="exploreBtn" class="explore-btn mt-4">Explore</button>
+
+  </div>
+
+  <script src="Scipt.js"></script>
+  <script src="https://kit.fontawesome.com/15358bc108.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
