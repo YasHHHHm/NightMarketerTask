@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(245, 245, 245, 1);
+}
+
 /* ------ NAVBAR CSS ------ */
 
 .navbar {
@@ -248,4 +252,145 @@ input[type="search"]::-webkit-search-cancel-button {
 .explore-btn:hover {
     background-color: rgb(95, 2, 2);
     transition: 1s ;
+}
+
+
+
+
+
+/* NEW LAUNCHES SECTION */
+
+.card-container .mb-4 {
+    padding: 27px;
+}
+
+.mt-5{
+    font-weight: 600;
+    color: rgba(60, 72, 82, 1);
+    font-family: Literata;
+    margin-bottom: 30px;
+}
+
+p{
+    margin-top: 100px;
+    color: (48, 48, 48, 1);
+    font-family: Literata;
+}
+
+.card-container {
+    margin-top: 100px;
+}
+
+.custom-card {
+    background-color: rgba(241, 241, 241, 1);
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fw{
+    font-family: Literata;
+    font-weight: 500;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.card-para{
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.custom-card .main-img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.custom-card .custom-card-body .vector-image{
+    width: 100%;
+    height: 16px;
+    object-fit: cover;
+}
+
+.custom-card-body {
+    margin-bottom: 25px;
+    width: 85%;
+    margin-left: 50px;
+    background: #fff;
+    padding: 22px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: -40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.vector-icon {
+    width: 43px;
+    height: 40px;
+    position: absolute;
+    top: -18px;
+    left: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.interaction-icons {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.interaction-icons i {
+    margin: 8px;
+    padding-top: 15px;
+    cursor: pointer;
+    color: #777;
+}
+
+.interaction-icons i:hover {
+    color: #ff6b6b;
+    transition: 1s;
+}
+
+.interaction-icons .icons-right .i{
+    background-color: #777;
+    border-radius: 50%;
+}
+
+.profile-images {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.profile-images img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -10px;
+}
+
+.discover-btn {
+    text-align: right;
+    margin-top: -35px;
+}
+
+.discover-btn button {
+    font-family: Literata;
+    border: 0.1px solid rgba(60, 72, 82, 1);
+    color: rgba(60, 72, 82, 1);
+    padding: 8px 15px;
+}
+
+.discover-btn button:hover {
+    background: rgba(60, 72, 82, 1);
+    color: #ffff;
+    transition: 1.5s;
 }
