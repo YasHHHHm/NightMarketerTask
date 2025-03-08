@@ -41,3 +41,69 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        on: {
+            slideChangeTransitionEnd: function () {
+                document.querySelectorAll(".swiper-slide").forEach(slide => {
+                    slide.classList.remove("swiper-slide-active");
+                });
+                document.querySelector(".swiper-slide-next").classList.add("swiper-slide-active");
+            }
+        }
+    });
+
+    document.querySelector(".more-btn").addEventListener("click", function () {
+        alert("Load more content!");
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,  // Ensures three cards are always visible
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: none,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        on: {
+            slideChangeTransitionEnd: function () {
+                document.querySelectorAll(".swiper-slide").forEach(slide => {
+                    slide.classList.remove("swiper-slide-active", "swiper-slide-prev", "swiper-slide-next");
+                });
+
+                let activeSlide = document.querySelector(".swiper-slide-active");
+                if (activeSlide) {
+                    activeSlide.classList.add("swiper-slide-active");
+                    if (activeSlide.previousElementSibling) {
+                        activeSlide.previousElementSibling.classList.add("swiper-slide-prev");
+                    }
+                    if (activeSlide.nextElementSibling) {
+                        activeSlide.nextElementSibling.classList.add("swiper-slide-next");
+                    }
+                }
+            }
+        }
+    });
+
+    document.querySelector(".more-btn").addEventListener("click", function () {
+        alert("Load more content!");
+    });
+});
+
