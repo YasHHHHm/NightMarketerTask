@@ -353,7 +353,7 @@ p{
 
 .custom-card .main-img {
     width: 100%;
-    height: 280x;
+    height: 280px;
     object-fit: cover;
 }
 
@@ -698,6 +698,185 @@ p{
 
 
 
+/* VIDEOS SECTION CSS */
+
+.video-section {
+    background-color: #1d2a38;
+    color: white;
+    padding-top: 0;
+    height: 285px;
+}
+
+.title {
+    margin-left: 60px;
+    font-family: Literata;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-family: Literata;
+    font-size: 1rem;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.video-section .date{
+    text-align: left;
+    font-size: 10px;
+    font-family: Literata;
+    margin-left: 60px;
+}
+
+
+.slider-buttons button {
+    background-color: white;
+    border: none;
+    padding: 20px 27px;
+    border-radius: 50%;
+    color: red;
+    font-size: 1rem;
+    margin: 0 60px;
+}
+
+.video-title{
+    font-size: 16px;
+    font-family: Literata;
+    margin-left: 60px;
+    text-align: left;
+}
+
+.video-card {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video-image {
+    position: relative;
+    overflow: hidden;
+    top: 45px;
+    object-fit: cover;
+}
+
+.video-image img {
+    height: 245px;
+    width: 90%;
+}
+
+.video-section .row .col-md-4 .video-image i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    height: 65px;
+}
+
+
+
+
+
+
+/* Influencers Pick CSS */
+
+.influencer-pick {
+    background-color: #F5F5F5;
+    padding: 50px 20px;
+}
+.influencer-pick h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #3C4852;
+    font-family: Literata;
+    margin-bottom: 60px;
+    margin-top: 9rem;
+    font-weight: bold;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: #F5F5F5;
+    padding-bottom: 0px;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    /* Remove overflow: hidden */
+}
+.card img {
+    width: 40%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.card-content {
+    position: absolute;
+    top: 20px;
+    right: 5%; /* Move the content 80% outside the image */
+    width: 66%; /* Full width of the text box */
+    height: 85%; /* Match the height of the image */
+    background: white;
+    padding: 20px;
+    box-shadow: none;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.card-content p{
+    margin-top: 5px;
+    font-size: 11px;
+}
+.quote {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1px;
+}
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.actions i {
+    margin-right: 5px;
+}
+
+.more {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.influencer-pick .cards-container .card .actions span{
+    margin-right: 5px;
+}
+
+
+
+
+
 
 /* FOOTER SECTION CSS */
 .footer {
@@ -848,94 +1027,3 @@ p{
 
 
 
-/* Influencers Pick CSS */
-
-.influencer-pick {
-    background-color: #F5F5F5;
-    padding: 50px 20px;
-}
-.influencer-pick h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #3C4852;
-    font-family: Literata;
-    margin-bottom: 60px;
-    font-weight: bold;
-}
-.cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card {
-    background: #F5F5F5;
-    padding-bottom: 0px;
-    position: relative;
-    height: 1px;
-    width: 100%;
-    border-radius: 10px;
-    border: none;
-    box-shadow: none;
-    /* Remove overflow: hidden */
-}
-.card img {
-    width: 40%;
-    height: 270px;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
-}
-.card-content {
-    position: absolute;
-    top: 20px;
-    right: 5%; /* Move the content 80% outside the image */
-    width: 66%; /* Full width of the text box */
-    height: 85%; /* Match the height of the image */
-    background: white;
-    padding: 20px;
-    box-shadow: none;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-.card-content p{
-    margin-top: 5px;
-    font-size: 11px;
-}
-.quote {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-    font-size: 1px;
-}
-.description {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-.actions {
-    display: flex;
-    justify-content: space-between;
-    font-size: 11px;
-    color: #777;
-    margin-bottom: 10px;
-}
-.actions i {
-    margin-right: 5px;
-}
-
-.more {
-    background: red;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    margin-top: 40px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.influencer-pick .cards-container .card .actions span{
-    margin-right: 5px;
-}
