@@ -118,14 +118,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width:1024px) {}
-/* NAVBAR COLLAPSE FIX */
 @media (max-width: 991px) {
     .navbar-collapse {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 15px; /* Adjust spacing */
+        gap: 15px; 
     }
 
     .navbar-nav {
@@ -510,8 +509,6 @@ p{
 
 /* SLIDES SECTION CSS */
 
- /* General Styles */
-
 .trending-section {
     padding: 40px 20px;
 }
@@ -525,7 +522,6 @@ p{
     font-family: Literata;
 }
 
-/* Swiper Container */
 .swiper {
     width: 90%;
     max-width: 1240px;
@@ -553,14 +549,12 @@ p{
     object-fit: cover;
 }
 
-/* Swiper Wrapper */
 .swiper-wrapper {
     display: flex;
     align-items: center;
     transition: transform 0.5s ease;
 }
 
-/* Card Styles */
 .card {
     background: white;
     border-radius: 15px;
@@ -618,7 +612,6 @@ p{
     background: darkred;
 }
 
-/* Swiper Navigation Buttons */
 .swiper-button-next, .swiper-button-prev {
     background: red;
     width: 50px;
@@ -653,7 +646,6 @@ p{
     font-weight: bold;
 }
 
-/* Card Effects */
 .swiper-slide {
     transform: scale(0.8);
     opacity: 0.5;
@@ -674,12 +666,10 @@ p{
     filter: blur(2px);
 }
 
-/* Fix for Side Cards Visibility */
 .swiper-slide:not(.swiper-slide-active) {
     pointer-events: none;
 }
 
-/* Button Below */
 .more-btn {
     background: red;
     color: white;
@@ -704,8 +694,8 @@ p{
     background-color: #1d2a38;
     color: white;
     padding-top: 0;
-    height: 270px; /* Change to auto for responsiveness */
-    padding-bottom: 20px; /* Add padding for better spacing */
+    height: 270px;
+    padding-bottom: 20px;
 }
 
 .title {
@@ -775,7 +765,7 @@ p{
     height: 65px;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) {
     .title {
         margin-left: 30px;
@@ -908,7 +898,6 @@ p{
     border-radius: 10px;
     border: none;
     box-shadow: none;
-    /* Remove overflow: hidden */
 }
 .card img {
     width: 40%;
@@ -920,9 +909,9 @@ p{
 .card-content {
     position: absolute;
     top: 20px;
-    right: 5%; /* Move the content 80% outside the image */
-    width: 66%; /* Full width of the text box */
-    height: 85%; /* Match the height of the image */
+    right: 5%; 
+    width: 66%; 
+    height: 85%; 
     background: white;
     padding: 20px;
     box-shadow: none;
@@ -991,7 +980,6 @@ p{
     gap: 30px;
 }
 
-/* Footer Rows */
 .footer-row {
     display: flex;
     justify-content: space-between;
@@ -1000,7 +988,6 @@ p{
     flex-wrap: wrap;
 }
 
-/* Footer Columns */
 .footer-column {
     flex: 1;
     padding: 20px;
@@ -1008,7 +995,6 @@ p{
     text-align: center;
 }
 
-/* Subscription Input */
 .input-group {
     color: #fff;
     display: flex;
@@ -1042,7 +1028,6 @@ p{
     background-color: #999;
 }
 
-/* Quick Links */
 .quick-links {
     display: flex;
     justify-content: space-around;
@@ -1073,7 +1058,6 @@ p{
     color: white;
 }
 
-/* Social Media */
 .social-icons a {
     color: #bbb;
     font-size: 20px;
@@ -1085,7 +1069,6 @@ p{
     color: white;
 }
 
-/* Terms & Conditions */
 .terms a {
     color: #bbb;
     text-decoration: none;
@@ -1096,7 +1079,6 @@ p{
     color: white;
 }
 
-/* Copyright */
 .footer hr {
     border-color: #666;
     width: 100%;
@@ -1120,10 +1102,6 @@ p{
 .link-section ul li a{
     margin-bottom: 10;
 }
-
-
-
-
 
 
 
@@ -1202,7 +1180,6 @@ p{
     }
 }
 
-/* For mobile devices */
 @media (max-width: 767px) {
     .navbar-brand {
         padding-left: 20px;
@@ -1268,7 +1245,6 @@ p{
     }
 }
 
-/* For very small mobile devices */
 @media (max-width: 480px) {
     .navbar-brand {
         padding-left: 10px;
@@ -1333,7 +1309,8 @@ p{
         text-align: center;
     }
 }
-/* Footer Responsiveness */
+
+
 @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;
@@ -1346,7 +1323,6 @@ p{
     }
 }
 
-/* Influencer Pick Responsiveness */
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
@@ -1383,7 +1359,6 @@ p{
     }
 }
 
-/* Trending Now Responsiveness */
 @media (max-width: 992px) {
     .swiper {
         width: 100%;
@@ -1415,7 +1390,7 @@ p{
 
     .swiper-button-next,
     .swiper-button-prev {
-        display: none; /* Hide navigation buttons on small screens */
+        display: none; 
     }
 }
 
