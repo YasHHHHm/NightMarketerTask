@@ -7,6 +7,7 @@
   <title>AI Brain</title>
   <link rel="stylesheet" href="Styles.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="icon" type="image/x-icon" href="TI Final Logo pdf version-01 1.png">
@@ -31,17 +32,15 @@
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid d-flex align-items-center">
-      <!-- Logo -->
+      
       <a class="navbar-brand me-4" href="#">
         <img src="TI Final Logo pdf version-01 1.png" alt="AI Brain" height="75">
       </a>
 
-      <!-- Navbar Toggler for Mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Navbar Content -->
       <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
         <ul class="navbar-nav mx-4 gap-3">
           <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
@@ -50,7 +49,6 @@
           <li class="nav-item"><a class="nav-link" href="#">Start Ups</a></li>
         </ul>
 
-        <!-- Search Bar -->
         <form id="form" role="search" class="mx-4">
           <input type="search" id="query" name="q" placeholder="Quick Search" aria-label="Search through site content">
           <button type="submit" class="search-button">
@@ -58,7 +56,6 @@
           </button>
         </form>
 
-        <!-- Buttons -->
         <div class="d-flex ms-3 gap-3">
           <button class="btn btn-outline-custom">Launch Your Project</button>
           <button class="btn btn-custom">Login/SignUp</button>
@@ -71,7 +68,7 @@
 
   <!-- Carousel Section -->
 
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-aos="fade-in" data-aos-duration="2000">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
         aria-label="Slide 1"></button>
@@ -124,12 +121,12 @@
 
   <!-- Category Section -->
 
-  <div class="container text-center mt-5" style="margin-bottom: 60px;">
+  <div class="container text-center mt-5" style="margin-bottom: 60px;" data-aos="fade-in" data-aos-duration="2000">
     <h2 class="section-title">Categories</h2>
     <div class="row g-3">
 
       <!-- First Row -->
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-right"  data-aos-duration="1000">
         <div class="category-card ">
           <img src="Rectangle 10.png" class="img-fluid" alt="Automobile">
           <div class="category-caption">Automobile</div>
@@ -137,59 +134,57 @@
       </div>
 
       <div class="col-md-4">
-        <div class="category-card">
+        <div class="category-card" data-aos="fade-in"  data-aos-duration="1000">
           <img src="Rectangle 2.png" class="img-fluid-big" alt="Arts & Entertainment">
           <div class="category-caption">Arts & Entertainment</div>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="category-card ">
+        <div class="category-card " data-aos="fade-left"  data-aos-duration="1000">
           <img src="Rectangle 7.png" class="img-fluid" alt="Home Appliances">
           <div class="category-caption">Home Appliances</div>
         </div>
       </div>
 
-      <!-- Second Row -->
       <div class="col-md-4">
-        <div class="category-card">
+        <div class="category-card" data-aos="fade-right"  data-aos-duration="1000">
           <img src="Rectangle 12.png" class="img-fluid" alt="Electronics">
           <div class="category-caption">Electronics</div>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="category-card">
+        <div class="category-card" data-aos="fade-in"  data-aos-duration="1000">
           <img src="Rectangle 6.png" class="img-fluid-small" alt="Education">
           <div class="category-caption">Education</div>
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-left"  data-aos-duration="1000">
         <div class="category-card">
           <img src="Rectangle 8.png" class="img-fluid" alt="Personal Care">
           <div class="category-caption">Personal Care</div>
         </div>
       </div>
 
-      <!-- Hidden extra categories in the same row layout -->
       <div class="row g-3 extra-categories d-none">
         <div class="col-md-4">
-          <div class="category-card">
+          <div class="category-card" data-aos="fade-right"  data-aos-duration="1000">
             <img src="Rectangle 31.png" class="img-fluid" alt="Fashion">
             <div class="category-caption">Medical</div>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="category-card">
+          <div class="category-card" data-aos="fade-in"  data-aos-duration="1000">
             <img src="Rectangle 29.png" class="img-fluid" alt="Sports">
             <div class="category-caption">Food & Beverages</div>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="category-card">
+          <div class="category-card" data-aos="fade-left"  data-aos-duration="1000">
             <img src="Rectangle 30.png" class="img-fluid" alt="Furniture">
             <div class="category-caption">Sports</div>
           </div>
@@ -198,9 +193,7 @@
 
 
     </div>
-
-    <!-- Explore Button -->
-    <button id="exploreBtn" class="explore-btn mt-4">Explore</button>
+    <button id="exploreBtn" class="explore-btn mt-4" data-aos="fade-up"  data-aos-duration="1000">Explore</button>
 
   </div>
 
@@ -208,15 +201,15 @@
 
   <!-- Launches Section -->
 
-  <div class="container text-center">
+  <div class="container text-center" data-aos="fade-in" data-aos-duration="2000">
     <h2 class="mt-5">New Launches</h2>
     <p>Find topics based on your interest, find curated content to increase your day to <br> day knowledge and stay
       update with latest news and industry trends</p>
 
     <div class="row card-container" style="margin-top: 50px;">
       <!-- Card 1 -->
-      <div class="col-md-6 mb-4">
-        <div class="custom-card">
+      <div class="col-md-6 mb-4" >
+        <div class="custom-card" data-aos="flip-right"  data-aos-duration="1000">
           <img class="main-img" src="pexels-cottonbro-4842573 1.png" alt="Business">
           <div class="custom-card-body">
             <div class="vector-icon">
@@ -254,7 +247,7 @@
 
       <!-- Card 2 -->
       <div class="col-md-6 mb-4">
-        <div class="custom-card">
+        <div class="custom-card" data-aos="flip-left"  data-aos-duration="1000">
           <img class="main-img" src="pexels-cottonbro-4842573 2.png" alt="Business">
           <div class="custom-card-body">
             <div class="vector-icon">
@@ -292,7 +285,7 @@
 
       <!-- Card 3 -->
       <div class="col-md-6 mb-4">
-        <div class="custom-card">
+        <div class="custom-card" data-aos="flip-right"  data-aos-duration="1000">
           <img class="main-img" src="pexels-cottonbro-4842573 3.png" alt="Business">
           <div class="custom-card-body">
             <div class="vector-icon">
@@ -330,7 +323,7 @@
 
       <!-- Card 4 -->
       <div class="col-md-6 mb-4">
-        <div class="custom-card">
+        <div class="custom-card" data-aos="flip-left" data-aos-duration="1000">
           <img class="main-img" src="Image.png" alt="Business">
           <div class="custom-card-body">
             <div class="vector-icon">
@@ -369,6 +362,11 @@
 
     <button id="exploreBtn" class="explore-btn mt-4" style="margin-bottom: 40px;">More</button>
   </div>
+
+
+
+
+
   <!-- Card Section -->
 
   <section class="blog-section py-5">
@@ -377,7 +375,7 @@
 
         <!-- Card 1 -->
         <div class="col-md-4">
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-up"  data-aos-duration="1000">
             <div class="icon-bg bg-red">
               <i class="fas fa-fire"></i>
             </div>
@@ -388,7 +386,7 @@
 
         <!-- Card 2 -->
         <div class="col-md-4">
-          <div class="blog-card">
+          <div class="blog-card"  data-aos="fade-up"  data-aos-duration="1000">
             <div class="icon-bg bg-dark">
               <i class="fas fa-clock"></i>
             </div>
@@ -398,8 +396,8 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="blog-card">
+        <div class="col-md-4"> 
+          <div class="blog-card"  data-aos="fade-up"  data-aos-duration="1000">
             <div class="icon-bg bg-dark">
               <i class="fas fa-star"></i>
             </div>
@@ -412,9 +410,12 @@
   </section>
 
 
+
+
+
   <!-- Sliding Images Section -->
 
-  <section class="trending-section">
+  <section class="trending-section" data-aos="fade-in" data-aos-duration="2000">
     <h2 class="slider-section-title">Trending Now</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -547,7 +548,7 @@
 
   <!-- Videos Section -->
 
-  <section class="video-section container-fluid py-5">
+  <section class="video-section container-fluid py-5" data-aos="fade-up"  data-aos-duration="1000">
     <div class="row">
       <div class="col-md-4 text-center text-md-start">
         <h2 class="title">Videos</h2>
@@ -560,7 +561,7 @@
       <div class="col-md-4 position-relative video-card">
         <p class="date">08.08.2021</p>
         <h4 class="video-title">Richird Norton photorealistic rendering <br> as real photos</h4>
-        <div class="video-image">
+        <div class="video-image" data-aos="fade-up" data-aos-duration="1500">
           <img src="Rectangle 0.png" alt="Video Thumbnail" class="img-fluid">
           <i class="fa-regular fa-circle-play"></i>
         </div>
@@ -568,7 +569,7 @@
       <div class="col-md-4 position-relative video-card">
         <p class="date">08.08.2021</p>
         <h4 class="video-title">Richird Norton photorealistic rendering <br> as real photos</h4>
-        <div class="video-image">
+        <div class="video-image" data-aos="fade-up" data-aos-duration="1500">
           <img src="video 2 img.png" alt="Video Thumbnail" class="img-fluid">
           <i class="fa-regular fa-circle-play"></i>
         </div>
@@ -585,7 +586,7 @@
   <section class="influencer-pick">
     <h2>Influencer’s Pick</h2>
     <div class="cards-container">
-      <div class="card" style="border: none; background: #F5F5F5;">
+      <div class="card" style="border: none; background: #F5F5F5;" data-aos="zoom-in"  data-aos-duration="1000">
         <img src="pexels-cottonbro-4842573 2.png" alt="Influencer">
         <div class="card-content">
           <div class="profile-images">
@@ -608,7 +609,7 @@
           </div>
         </div>
       </div>
-      <div class="card" style="border: none; background: #F5F5F5;">
+      <div class="card" style="border: none; background: #F5F5F5;" data-aos="zoom-in"  data-aos-duration="1000">
         <img src="pexels-cottonbro-4842573 2.png" alt="Influencer">
         <div class="card-content">
           <div class="profile-images">
@@ -726,6 +727,11 @@
   </footer>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
